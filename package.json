@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "David Waller",
   "dependencies": {
+    "callbag-connect-react": "^1.0.0",
     "callbag-filter": "^1.0.1",
     "callbag-for-each": "^1.0.1",
     "callbag-from-event": "^1.0.0",

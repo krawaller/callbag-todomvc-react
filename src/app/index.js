@@ -1,7 +1,7 @@
 import React from 'react';
 import cls from 'classnames';
 
-import connect from './connect';
+import connect from 'callbag-connect-react';
 
 import merge from 'callbag-merge';
 
