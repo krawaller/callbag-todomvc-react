@@ -11,13 +11,13 @@ export default function makeApp(state, actions, events){
     actions.newTodoActions, actions.cancelEditActions
   );
   
-  @connect({
-    sources: {state},
-    signals: [
+  @connect(
+    {state},
+    [
       [shouldFocusNew, comp => comp.focusNew()],
       [actions.editActions, comp => comp.focusEdit()]
     ]
-  })
+  )
   class App extends React.Component {
     constructor(props){
       super(props);
@@ -95,5 +95,3 @@ export default function makeApp(state, actions, events){
   }
   return App;
 }
-
-
